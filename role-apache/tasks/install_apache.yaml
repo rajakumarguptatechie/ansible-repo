@@ -1,0 +1,5 @@
+---
+- name: HTTPD package install
+  yum:
+    name: "{{ pkg_name }}"
+    state: present   

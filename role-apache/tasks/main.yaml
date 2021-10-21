@@ -1,0 +1,6 @@
+---
+- name: Install Apache Package
+  include_tasks: install_apache.yaml
+
+- name: Configure Apache
+  include_tasks: configure_apache.yaml

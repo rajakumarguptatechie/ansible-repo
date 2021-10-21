@@ -1,0 +1,6 @@
+---
+- name: "Configure index.html"
+  template:
+    src: "template/index.html.j2"
+    dest: "/var/www/html/index.html"
+    #notfiy: "Restart Apache Service"

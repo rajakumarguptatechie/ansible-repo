@@ -1,0 +1,10 @@
+---
+- name: Deploy LAMP stack
+  hosts: webserver
+  user: ansible
+  become: yes
+  roles:
+    - role-mysql
+    - role-php
+    - role-firewall  
+    - role-apache      

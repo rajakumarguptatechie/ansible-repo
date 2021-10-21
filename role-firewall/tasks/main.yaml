@@ -1,0 +1,12 @@
+---
+- name: Install Firewall
+  yum:
+    name: firewalld
+    state: present      
+
+- name: firewalld permits http service
+  firewalld:
+    service: "{{ service_name }}"
+    permanent: true
+    state: enabled
+    immediate: yes     
